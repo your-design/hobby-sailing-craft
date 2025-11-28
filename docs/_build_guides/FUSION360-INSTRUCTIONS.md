@@ -24,6 +24,7 @@ You're going to build a parametric 3D model of the asymmetric proa hull using lo
 1. [hull-points.csv](/assets/downloads/hull-points.csv) - Point cloud data
 2. [hull-mathematics.md](/designs/hull-mathematics/index.html) - Reference dimensions
 
+
 ### Fusion 360 Setup
 1. **Units:** Set to inches (Edit → Preferences → Default Units → Inches)
 2. **Workspace:** Use "Design" workspace
