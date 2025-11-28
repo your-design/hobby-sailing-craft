@@ -1,3 +1,11 @@
+---
+layout: guide
+title: "Fusion 360 Step-by-Step Guide"
+step: 9
+time: "2 hours"
+difficulty: "Intermediate"
+---
+
 # OSEP-16 Hull: Fusion 360 Step-by-Step Guide
 
 ## Overview
@@ -13,8 +21,8 @@ You're going to build a parametric 3D model of the asymmetric proa hull using lo
 ## Prerequisites
 
 ### Files You Need
-1. `hull-points.csv` - Point cloud data (generated)
-2. `hull-mathematics.md` - Reference dimensions
+1. [hull-points.csv](/assets/downloads/hull-points.csv) - Point cloud data
+2. [hull-mathematics.md](/designs/hull-mathematics/index.html) - Reference dimensions
 
 ### Fusion 360 Setup
 1. **Units:** Set to inches (Edit → Preferences → Default Units → Inches)
