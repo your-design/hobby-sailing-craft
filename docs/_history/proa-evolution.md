@@ -5,6 +5,7 @@ subtitle: "How Pacific Islanders Solved Sailing Challenges Millennia Before Mode
 date: 2025-11-28
 categories: [history, design, naval-architecture]
 tags: [proa, micronesia, polynesia, outrigger, traditional-navigation]
+permalink: /history/proa-evolution.html
 ---
 
 # The Proa: 3000 Years of Evolution

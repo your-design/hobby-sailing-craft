@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: history
 title: "History"
 subtitle: "Main Guide"
 date: 2025-11-28

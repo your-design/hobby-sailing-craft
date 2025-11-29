@@ -5,6 +5,7 @@ subtitle: "Overview and Theory"
 date: 2025-11-28
 categories: [history, design, naval-architecture]
 tags: [proa, micronesia, polynesia, outrigger, traditional-navigation]
+permalink: /history/cnc-overview.html
 ---
 
 # CNC Mill: Complete Documentation

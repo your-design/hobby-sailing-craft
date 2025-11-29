@@ -8,7 +8,7 @@ permalink: /index.html
 
 ## 3000 Years of Ocean Wisdom, Reimagined for Modern Lakes
 
-![OSEP-16 Proa Render](assets/images/complete-proa-pop-art.svg)
+![OSEP-16 Proa Render](/assets/images/complete-proa-pop-art.svg)
 
 
 ---
