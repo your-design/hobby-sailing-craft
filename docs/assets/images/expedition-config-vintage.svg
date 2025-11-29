@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Vintage Outdoor Catalog Style - Expedition Configuration -->
+  
+  <defs>
+    <pattern id="paper3" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" fill="#F4E8D0"/>
+    </pattern>
+    
+    <linearGradient id="wood3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B6F47;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#A0826D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B6F47;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="900" fill="url(#paper3)"/>
+  
+  <!-- Border -->
+  <rect x="20" y="20" width="1160" height="860" fill="none" 
+        stroke="#654321" stroke-width="8" rx="15"/>
+  <rect x="30" y="30" width="1140" height="840" fill="none" 
+        stroke="#8B6F47" stroke-width="2" rx="10"/>
+  
+  <!-- Title -->
+  <text x="600" y="70" font-family="Georgia, serif" font-size="48" 
+        fill="#2C1810" text-anchor="middle" font-weight="bold" font-style="italic">
+    Expedition Camping Configuration
+  </text>
+  <text x="600" y="100" font-family="Georgia, serif" font-size="20" 
+        fill="#654321" text-anchor="middle">
+    OSEP-16 Expedition Proa • 3-5 Day Self-Sufficient Cruising
+  </text>
+  
+  <!-- Assembly with camping gear -->
+  <g id="expedition-assembly" transform="translate(200, 260)">
+    
+    <!-- Main hull -->
+    <path d="M 100,220 Q 250,200 400,195 Q 550,200 700,220 
+             Q 550,260 400,265 Q 250,260 100,220 Z"
+          fill="url(#wood3)" stroke="#4A3728" stroke-width="3"/>
+    
+    <!-- Mast -->
+    <rect x="345" y="20" width="10" height="175" fill="#8B6F47" 
+          stroke="#4A3728" stroke-width="2"/>
+    
+    <!-- Sail (furled - expedition mode) -->
+    <path d="M 350,25 L 420,140 L 350,220" 
+          fill="#D2B48C" stroke="#654321" stroke-width="2" opacity="0.7"/>
+    
+    <!-- Crossbeams -->
+    <rect x="250" y="110" width="250" height="10" fill="#A0826D" 
+          stroke="#4A3728" stroke-width="2"/>
+    <rect x="250" y="180" width="250" height="10" fill="#A0826D" 
+          stroke="#4A3728" stroke-width="2"/>
+    
+    <!-- Ama with storage access -->
+    <ellipse cx="575" cy="145" rx="100" ry="30" fill="#A0826D" 
+             stroke="#4A3728" stroke-width="2"/>
+    <!-- Hatch -->
+    <rect x="535" y="130" width="80" height="15" fill="none" 
+          stroke="#654321" stroke-width="2" stroke-dasharray="4,2"/>
+    
+    <!-- Tent/shelter suggestion on trampoline -->
+    <path d="M 280,140 L 350,100 L 420,140" fill="none" 
+          stroke="#8B6F47" stroke-width="2" stroke-dasharray="5,3"/>
+    
+    <!-- Dry bags -->
+    <ellipse cx="320" cy="230" rx="20" ry="15" fill="#2F4F4F" 
+             stroke="#4A3728" stroke-width="2"/>
+    <ellipse cx="360" cy="230" rx="20" ry="15" fill="#556B2F" 
+             stroke="#4A3728" stroke-width="2"/>
+    <ellipse cx="440" cy="230" rx="20" ry="15" fill="#8B4513" 
+             stroke="#4A3728" stroke-width="2"/>
+  </g>
+  
+  <!-- Mounting point callouts -->
+  
+  <!-- Dry Bag Clips -->
+  <g id="dry-bags">
+    <circle cx="520" cy="490" r="8" fill="#8B4513" stroke="#4A3728" stroke-width="2"/>
+    <line x1="520" y1="490" x2="460" y2="560" stroke="#4A3728" 
+          stroke-width="1.5" stroke-dasharray="3,2"/>
+    <rect x="330" y="550" width="140" height="70" fill="#F4E8D0" 
+          stroke="#654321" stroke-width="2" rx="5"/>
+    <text x="400" y="572" font-family="Georgia, serif" font-size="13" 
+          fill="#2C1810" text-anchor="middle" font-weight="bold">
+      Dry Bag Clips
+    </text>
+    <text x="400" y="589" font-family="Georgia, serif" font-size="10" 
+          fill="#654321" text-anchor="middle">
+      Gear Security (6x)
+    </text>
+    <text x="400" y="603" font-family="Georgia, serif" font-size="9" 
+          fill="#654321" text-anchor="middle" font-style="italic">
+      Type A Track
+    </text>
+    <text x="400" y="616" font-family="Georgia, serif" font-size="9" 
+          fill="#654321" text-anchor="middle">
+      Main hull &amp; ama
+    </text>
+  </g>
+  
+  <!-- Water Jug Mount -->
+  <g id="water-jug">
+    <rect x="690" y="482" width="20" height="16" fill="#2C3E50" 
+          stroke="#4A3728" stroke-width="2" rx="2"/>
+    <line x1="700" y1="498" x2="750" y2="560" stroke="#4A3728" 
+          stroke-width="1.5" stroke-dasharray="3,2"/>
+    <rect x="690" y="550" width="140" height="70" fill="#F4E8D0" 
+          stroke="#654321" stroke-width="2" rx="5"/>
+    <text x="760" y="572" font-family="Georgia, serif" font-size="13" 
+          fill="#2C1810" text-anchor="middle" font-weight="bold">
+      Water Jug
+    </text>
+    <text x="760" y="589" font-family="Georgia, serif" font-size="10" 
+          fill="#654321" text-anchor="middle">
+      5-Gallon Fresh
+    </text>
+    <text x="760" y="603" font-family="Georgia, serif" font-size="9" 
+          fill="#654321" text-anchor="middle" font-style="italic">
+      Type D Recess
+    </text>
+    <text x="760" y="616" font-family="Georgia, serif" font-size="9" 
+          fill="#654321" text-anchor="middle">
+      Station 6, Secure
+    </text>
+  </g>
+  
+  <!-- Tent Pole Sockets -->
+  <g id="tent-poles">
+    <circle cx="600" cy="360" r="8" fill="#8B4513" stroke="#4A3728" stroke-width="2"/>
+    <line x1="600" y1="360" x2="660" y2="300" stroke="#4A3728" 
+          stroke-width="1.5" stroke-dasharray="3,2"/>
+    <rect x="600" y="240" width="140" height="70" fill="#F4E8D0" 
+          stroke="#654321" stroke-width="2" rx="5"/>
+    <text x="670" y="262" font-family="Georgia, serif" font-size="13" 
+          fill="#2C1810" text-anchor="middle" font-weight="bold">
+      Tent Sockets
+    </text>
+    <text x="670" y="279" font-family="Georgia, serif" font-size="10" 
+          fill="#654321" text-anchor="middle">
+      Shelter System (4x)
+    </text>
+    <text x="670" y="293" font-family="Georgia, serif" font-size="9" 
+          fill="#654321" text-anchor="middle" font-style="italic">
+      Type D Recess
+    </text>
+    <text x="670" y="306" font-family="Georgia, serif" font-size="9" 
+          fill="#654321" text-anchor="middle">
+      Trampoline Corners
+    </text>
+  </g>
+  
+  <!-- Stove Gimbals -->
+  <g id="stove">
+    <circle cx="775" cy="405" r="8" fill="#C0C0C0" stroke="#4A3728" stroke-width="2"/>
+    <line x1="775" y1="405" x2="880" y2="360" stroke="#4A3728" 
+          stroke-width="1.5" stroke-dasharray="3,2"/>
+    <rect x="820" y="300" width="140" height="70" fill="#F4E8D0" 
+          stroke="#654321" stroke-width="2" rx="5"/>
+    <text x="890" y="322" font-family="Georgia, serif" font-size="13" 
+          fill="#2C1810" text-anchor="middle" font-weight="bold">
+      Camp Stove
+    </text>
+    <text x="890" y="339" font-family="Georgia, serif" font-size="10" 
+          fill="#654321" text-anchor="middle">
+      Cook Platform
+    </text>
+    <text x="890" y="353" font-family="Georgia, serif" font-size="9" 
+          fill="#654321" text-anchor="middle" font-style="italic">
+      Type D Recess
+    </text>
+    <text x="890" y="366" font-family="Georgia, serif" font-size="9" 
+          fill="#654321" text-anchor="middle">
+      Ama Deck (Stable)
+    </text>
+  </g>
+  
+  <!-- Ama Storage Access -->
+  <g id="ama-storage">
+    <rect x="765" cy="405" width="30" height="20" fill="#8B6F47" 
+          stroke="#4A3728" stroke-width="2"/>
+    <line x1="780" y1="405" x2="720" y2="320" stroke="#4A3728" 
+          stroke-width="1.5" stroke-dasharray="3,2"/>
+    <rect x="580" y="170" width="160" height="80" fill="#F4E8D0" 
+          stroke="#654321" stroke-width="2" rx="5"/>
+    <text x="660" y="192" font-family="Georgia, serif" font-size="13" 
+          fill="#2C1810" text-anchor="middle" font-weight="bold">
+      Ama Storage
+    </text>
+    <text x="660" y="209" font-family="Georgia, serif" font-size="10" 
+          fill="#654321" text-anchor="middle">
+      12 Cu Ft Watertight
+    </text>
+    <text x="660" y="223" font-family="Georgia, serif" font-size="9" 
+          fill="#654321" text-anchor="middle" font-style="italic">
+      Sealed Hatch Access
+    </text>
+    <text x="660" y="236" font-family="Georgia, serif" font-size="9" 
+          fill="#654321" text-anchor="middle">
+      Dry Gear, Food, Tools
+    </text>
+  </g>
+  
+  <!-- Safety Lines -->
+  <g id="safety-lines">
+    <circle cx="380" cy="490" r="8" fill="#8B4513" stroke="#4A3728" stroke-width="2"/>
+    <line x1="380" y1="490" x2="280" y2="560" stroke="#4A3728" 
+          stroke-width="1.5" stroke-dasharray="3,2"/>
+    <rect x="150" y="550" width="150" height="70" fill="#F4E8D0" 
+          stroke="#654321" stroke-width="2" rx="5"/>
+    <text x="225" y="572" font-family="Georgia, serif" font-size="13" 
+          fill="#2C1810" text-anchor="middle" font-weight="bold">
+      Safety Lines
+    </text>
+    <text x="225" y="589" font-family="Georgia, serif" font-size="10" 
+          fill="#654321" text-anchor="middle">
+      Lifelines/Jacklines
+    </text>
+    <text x="225" y="603" font-family="Georgia, serif" font-size="9" 
+          fill="#654321" text-anchor="middle" font-style="italic">
+      Type C Pad Eyes
+    </text>
+    <text x="225" y="616" font-family="Georgia, serif" font-size="9" 
+          fill="#654321" text-anchor="middle">
+      All 4 Corners + Ama
+    </text>
+  </g>
+  
+  <!-- Anchor System -->
+  <g id="anchor-system">
+    <circle cx="295" cy="478" r="8" fill="#C0C0C0" stroke="#4A3728" stroke-width="2"/>
+    <line x1="295" y1="478" x2="200" y2="420" stroke="#4A3728" 
+          stroke-width="1.5" stroke-dasharray="3,2"/>
+    <rect x="100" y="350" width="140" height="80" fill="#F4E8D0" 
+          stroke="#654321" stroke-width="2" rx="5"/>
+    <text x="170" y="372" font-family="Georgia, serif" font-size="13" 
+          fill="#2C1810" text-anchor="middle" font-weight="bold">
+      Anchor System
+    </text>
+    <text x="170" y="389" font-family="Georgia, serif" font-size="10" 
+          fill="#654321" text-anchor="middle">
+      Folding Grapnel
+    </text>
+    <text x="170" y="403" font-family="Georgia, serif" font-size="9" 
+          fill="#654321" text-anchor="middle" font-style="italic">
+      Type A Track
+    </text>
+    <text x="170" y="416" font-family="Georgia, serif" font-size="9" 
+          fill="#654321" text-anchor="middle">
+      50' Rode Storage
+    </text>
+  </g>
+  
+  <!-- Expedition Gear List -->
+  <g id="gear-list" transform="translate(60, 670)">
+    <rect x="0" y="0" width="550" height="190" fill="#FFF" fill-opacity="0.9" 
+          stroke="#654321" stroke-width="3" rx="8"/>
+    <text x="275" y="28" font-family="Georgia, serif" font-size="16" 
+          fill="#2C1810" text-anchor="middle" font-weight="bold">
+      Essential Expedition Gear
+    </text>
+    
+    <text x="20" y="55" font-family="Georgia, serif" font-size="11" fill="#654321">
+      <tspan font-weight="bold">Water:</tspan> 5-gallon jug + 2L backup (drinking)
+    </text>
+    <text x="20" y="72" font-family="Georgia, serif" font-size="11" fill="#654321">
+      <tspan font-weight="bold">Food:</tspan> Dehydrated meals, energy bars (3-5 days)
+    </text>
+    <text x="20" y="89" font-family="Georgia, serif" font-size="11" fill="#654321">
+      <tspan font-weight="bold">Shelter:</tspan> Tarp/tent setup on trampoline
+    </text>
+    <text x="20" y="106" font-family="Georgia, serif" font-size="11" fill="#654321">
+      <tspan font-weight="bold">Sleep System:</tspan> Inflatable pad, sleeping bag
+    </text>
+    <text x="20" y="123" font-family="Georgia, serif" font-size="11" fill="#654321">
+      <tspan font-weight="bold">Cooking:</tspan> Camp stove, fuel, mess kit
+    </text>
+    <text x="20" y="140" font-family="Georgia, serif" font-size="11" fill="#654321">
+      <tspan font-weight="bold">Navigation:</tspan> GPS, compass, charts, VHF radio
+    </text>
+    <text x="20" y="157" font-family="Georgia, serif" font-size="11" fill="#654321">
+      <tspan font-weight="bold">Safety:</tspan> Life jackets, flares, first aid, repair kit
+    </text>
+    <text x="20" y="174" font-family="Georgia, serif" font-size="11" fill="#654321">
+      <tspan font-weight="bold">Tools:</tspan> Multi-tool, spare parts, duct tape
+    </text>
+  </g>
+  
+  <!-- Range & Capacity -->
+  <g id="capacity" transform="translate(650, 670)">
+    <rect x="0" y="0" width="490" height="190" fill="#FFF" fill-opacity="0.9" 
+          stroke="#654321" stroke-width="3" rx="8"/>
+    <text x="245" y="28" font-family="Georgia, serif" font-size="16" 
+          fill="#2C1810" text-anchor="middle" font-weight="bold">
+      Expedition Capabilities
+    </text>
+    
+    <text x="20" y="55" font-family="Georgia, serif" font-size="12" fill="#654321" font-weight="bold">
+      Range &amp; Duration:
+    </text>
+    <text x="30" y="73" font-family="Georgia, serif" font-size="11" fill="#654321">
+      • 50+ nautical mile range (single day)
+    </text>
+    <text x="30" y="89" font-family="Georgia, serif" font-size="11" fill="#654321">
+      • 3-5 day self-sufficient cruising
+    </text>
+    <text x="30" y="105" font-family="Georgia, serif" font-size="11" fill="#654321">
+      • Island hopping / coastal exploration
+    </text>
+    
+    <text x="20" y="130" font-family="Georgia, serif" font-size="12" fill="#654321" font-weight="bold">
+      Total Load Capacity:
+    </text>
+    <text x="30" y="148" font-family="Georgia, serif" font-size="11" fill="#654321">
+      • 500 lbs total (2 adults + gear)
+    </text>
+    <text x="30" y="164" font-family="Georgia, serif" font-size="11" fill="#654321">
+      • 100 lbs expedition gear typical
+    </text>
+    <text x="30" y="180" font-family="Georgia, serif" font-size="11" fill="#654321">
+      • Reserve flotation: 400 lbs (ama)
+    </text>
+  </g>
+  
+  <!-- Bottom attribution -->
+  <text x="600" y="880" font-family="Georgia, serif" font-size="12" 
+        fill="#654321" text-anchor="middle" font-style="italic">
+    OSEP-16 • Multi-day expedition configuration • Tested for Colorado mountain lakes
+  </text>
+</svg>

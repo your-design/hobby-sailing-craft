@@ -9,11 +9,26 @@ permalink: /designs/index.html
 
 # OSEP-16 Main Hull: Design
 
+
+![Complete Proa - PopArt](/assets/images/complete-proa-pop-art.svg)
+
+
 ## Hull Mathematics
 
 [detailed design document](/designs/hull-mathematics/index.html)
+
 
 ## Hull CAD Generation
 
 * [Fusion 360 Import Guide](/designs/import-guide.html)
 * [Fusion 360 Design Instructions](/designs/fusion360-instructions.html)
+
+
+### Hull
+
+![Hull PopArt](/assets/images/hull-pop-art.svg)
+
+
+### Ana
+
+![Ana](/assets/images/ama-pop-art.svg)
