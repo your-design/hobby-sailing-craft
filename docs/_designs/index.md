@@ -42,4 +42,5 @@ permalink: /designs/index.html
 
 ### Materials Shootout
 
-[materials shootout](/designs/materials-shootout.html)
+* [materials shootout](/designs/materials-shootout.html)
+* [foam core analysis](/designs/foam-core-analysis.html)
