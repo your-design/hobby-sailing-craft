@@ -32,3 +32,14 @@ permalink: /designs/index.html
 ### Ana
 
 ![Ana](/assets/images/ama-pop-art.svg)
+
+
+## History
+
+### Critical Review
+
+[review documentation](/designs/critical-design-review.html)
+
+### Materials Shootout
+
+[materials shootout](/designs/materials-shootout.html)
