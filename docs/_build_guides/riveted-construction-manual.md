@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Riveted Construction Manual"
-permalink: /designs/riveted-construction-manual.html
+permalink: /build-guides/riveted-construction-manual.html
 ---
 
 # Riveted Construction Manual
