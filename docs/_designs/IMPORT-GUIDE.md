@@ -5,6 +5,7 @@ subtitle: "Fusion 360 Import Guide"
 date: 2025-11-28
 categories: [design, hydrodynamics]
 cad_files: [hull-main-v1.step, hull-panels.dxf]
+permalink: /designs/import-guide.html
 ---
 
 # OSEP-16 Hull: Fusion 360 Import Guide
