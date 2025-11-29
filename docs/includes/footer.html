@@ -1,0 +1,57 @@
+<footer class="site-footer">
+  <div class="site-container">
+    <div class="footer-content">
+      
+      <div class="footer-section">
+        <h4>About the Project</h4>
+        <p>{{ site.description | truncate: 150 }}</p>
+        <p style="font-family: var(--font-display); font-size: 0.85rem; margin-top: var(--space-sm);">
+          <strong>Version:</strong> {{ site.project.version }}<br>
+          <strong>Status:</strong> {{ site.project.status }}<br>
+          <strong>License:</strong> {{ site.project.license }}
+        </p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          {% for link in site.nav_links %}
+            <li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="{{ site.project.repository }}" target="_blank" rel="noopener">GitHub Repository</a></li>
+          <li><a href="/downloads/">Download Files</a></li>
+          <li><a href="/community/">Join Community</a></li>
+          <li><a href="/feed.xml">RSS Feed</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Acknowledgments</h4>
+        <p style="font-size: 0.9rem; font-style: italic;">
+          Standing on the shoulders of 3,000 years of Micronesian master navigators and boat builders.
+        </p>
+        <p style="font-size: 0.85rem; margin-top: var(--space-sm);">
+          Inspired by the <em>wa</em> of Polynesia, the <em>proa</em> of Micronesia, and the <em>kaep</em> of the Marshall Islands.
+        </p>
+      </div>
+      
+    </div>
+    
+    <div class="footer-bottom">
+      <p>
+        &copy; {{ 'now' | date: "%Y" }} {{ site.author.name }} 
+        | Licensed under {{ site.project.license }}
+        | Built with <a href="https://jekyllrb.com" target="_blank">Jekyll</a>
+      </p>
+      <p style="margin-top: 0.5rem; font-size: 0.85rem; opacity: 0.8;">
+        "The ocean connects all things" — Pacific Islander proverb
+      </p>
+    </div>
+  </div>
+</footer>

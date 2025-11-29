@@ -1,0 +1,719 @@
+/* 
+ * OSEP-16 Expedition Proa - Custom Jekyll Theme
+ * Aesthetic: Vintage Maritime Charts meets Modern Expedition Gear
+ * Inspired by: 1950s nautical charts, field notebooks, ocean exploration
+ */
+
+/* === CSS VARIABLES === */
+:root {
+  /* Color Palette: Weathered Ocean & Navigation Charts */
+  --ocean-deep: #1a3a52;
+  --ocean-medium: #2e5266;
+  --ocean-light: #4a7c99;
+  --sand-light: #f5e6d3;
+  --sand-medium: #e8d4b8;
+  --sand-dark: #d4bfa0;
+  --coral-accent: #d97742;
+  --rust-accent: #b85d3e;
+  --compass-gold: #c9a961;
+  --chart-line: #3d6073;
+  --ink-dark: #1f1f1f;
+  --ink-medium: #4a4a4a;
+  
+  /* Typography Scale */
+  --font-display: 'Courier Prime', 'Courier New', monospace;
+  --font-heading: 'Crimson Text', Georgia, serif;
+  --font-body: 'Crimson Text', Georgia, serif;
+  --font-nav: 'Courier Prime', monospace;
+  
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+  
+  /* Borders & Corners */
+  --border-width: 2px;
+  --border-radius: 2px;
+  
+  /* Shadows - subtle, weathered */
+  --shadow-sm: 2px 2px 8px rgba(26, 58, 82, 0.15);
+  --shadow-md: 4px 4px 16px rgba(26, 58, 82, 0.2);
+  --shadow-lg: 8px 8px 24px rgba(26, 58, 82, 0.25);
+}
+
+/* === RESET & BASE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.7;
+  color: var(--ink-dark);
+  background: var(--sand-light);
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(201, 169, 97, 0.03) 2px,
+      rgba(201, 169, 97, 0.03) 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(201, 169, 97, 0.03) 2px,
+      rgba(201, 169, 97, 0.03) 4px
+    );
+  background-size: 30px 30px;
+  position: relative;
+}
+
+/* Subtle paper texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+/* === TYPOGRAPHY === */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: var(--space-sm);
+  color: var(--ocean-deep);
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: var(--space-md);
+  position: relative;
+  padding-bottom: var(--space-sm);
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 120px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--coral-accent), var(--compass-gold));
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-top: var(--space-md);
+}
+
+h4 {
+  font-size: 1.4rem;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--ocean-medium);
+}
+
+/* Body text */
+p {
+  margin-bottom: var(--space-sm);
+  max-width: 70ch;
+}
+
+/* Links */
+a {
+  color: var(--ocean-medium);
+  text-decoration: none;
+  border-bottom: 1px solid var(--ocean-light);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+a:hover {
+  color: var(--coral-accent);
+  border-bottom-color: var(--coral-accent);
+}
+
+a:active {
+  transform: translateY(1px);
+}
+
+/* Code blocks - field notebook style */
+code {
+  font-family: var(--font-display);
+  background: rgba(46, 82, 102, 0.08);
+  padding: 0.2em 0.4em;
+  border-radius: var(--border-radius);
+  font-size: 0.9em;
+  border: 1px solid rgba(46, 82, 102, 0.15);
+}
+
+pre {
+  background: var(--sand-dark);
+  border: var(--border-width) solid var(--chart-line);
+  border-left: 6px solid var(--ocean-medium);
+  padding: var(--space-sm);
+  overflow-x: auto;
+  margin: var(--space-md) 0;
+  box-shadow: var(--shadow-sm);
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Blockquotes - captain's log style */
+blockquote {
+  border-left: 4px solid var(--compass-gold);
+  padding-left: var(--space-md);
+  margin: var(--space-md) 0;
+  font-style: italic;
+  color: var(--ink-medium);
+  position: relative;
+  background: rgba(201, 169, 97, 0.05);
+  padding: var(--space-sm) var(--space-md);
+}
+
+blockquote::before {
+  content: '"';
+  font-size: 4rem;
+  color: var(--compass-gold);
+  opacity: 0.3;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  font-family: var(--font-heading);
+}
+
+/* === LAYOUT STRUCTURE === */
+.site-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+/* === HEADER - Navigation Chart === */
+.site-header {
+  background: var(--ocean-deep);
+  background-image: 
+    linear-gradient(135deg, var(--ocean-deep) 0%, var(--ocean-medium) 100%);
+  color: var(--sand-light);
+  padding: var(--space-md) 0;
+  border-bottom: 4px solid var(--compass-gold);
+  position: relative;
+  box-shadow: var(--shadow-md);
+}
+
+.site-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(255, 255, 255, 0.02) 40px,
+      rgba(255, 255, 255, 0.02) 80px
+    );
+  pointer-events: none;
+}
+
+.site-header .site-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Site title - expedition patch style */
+.site-title {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--sand-light);
+  border: none;
+  padding: var(--space-xs) var(--space-sm);
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid var(--compass-gold);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.site-title:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.site-tagline {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--sand-medium);
+  margin-top: 0.3rem;
+  letter-spacing: 0.05em;
+}
+
+/* Navigation - compass points */
+.site-nav {
+  display: flex;
+  gap: var(--space-md);
+  font-family: var(--font-nav);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.site-nav a {
+  color: var(--sand-light);
+  border: none;
+  padding: var(--space-xs) var(--space-sm);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-nav a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--compass-gold);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.site-nav a:hover::before {
+  transform: translateX(0);
+}
+
+.site-nav a:hover {
+  color: var(--compass-gold);
+}
+
+/* === HERO SECTION - Chart Overview === */
+.hero {
+  background: linear-gradient(180deg, rgba(26, 58, 82, 0.03) 0%, transparent 100%);
+  padding: var(--space-xl) 0;
+  text-align: center;
+  position: relative;
+  margin-bottom: var(--space-lg);
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--ocean-medium), transparent);
+}
+
+.hero-title {
+  font-size: 4rem;
+  margin-bottom: var(--space-sm);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--ink-medium);
+  font-family: var(--font-heading);
+  font-style: italic;
+  margin-bottom: var(--space-md);
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+.hero-cta {
+  display: inline-block;
+  background: var(--coral-accent);
+  color: white;
+  padding: var(--space-sm) var(--space-md);
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  border: 2px solid var(--rust-accent);
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.8s ease-out 0.4s backwards;
+}
+
+.hero-cta:hover {
+  background: var(--rust-accent);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--coral-accent);
+}
+
+/* === MAIN CONTENT AREA === */
+.main-content {
+  padding: var(--space-lg) 0;
+  min-height: 60vh;
+}
+
+/* Content card - field note style */
+.content-card {
+  background: white;
+  border: var(--border-width) solid var(--sand-dark);
+  border-left: 6px solid var(--ocean-light);
+  padding: var(--space-md);
+  margin-bottom: var(--space-md);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.content-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--ocean-light), transparent);
+}
+
+.content-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-left-color: var(--coral-accent);
+}
+
+/* Grid layouts */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-md);
+  margin: var(--space-md) 0;
+}
+
+/* === TABLES - Chart Data === */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: var(--space-md) 0;
+  background: white;
+  border: var(--border-width) solid var(--sand-dark);
+  box-shadow: var(--shadow-sm);
+}
+
+thead {
+  background: var(--ocean-deep);
+  color: var(--sand-light);
+}
+
+th {
+  padding: var(--space-sm);
+  text-align: left;
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-bottom: 2px solid var(--compass-gold);
+}
+
+td {
+  padding: var(--space-sm);
+  border-bottom: 1px solid var(--sand-medium);
+}
+
+tr:hover {
+  background: rgba(201, 169, 97, 0.05);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* === BUTTONS & CONTROLS === */
+.btn {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-md);
+  background: var(--ocean-medium);
+  color: white;
+  border: 2px solid var(--ocean-deep);
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn:hover {
+  background: var(--ocean-deep);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--ocean-medium);
+}
+
+.btn-primary {
+  background: var(--coral-accent);
+  border-color: var(--rust-accent);
+}
+
+.btn-primary:hover {
+  background: var(--rust-accent);
+  border-color: var(--coral-accent);
+}
+
+/* === FOOTER - Ship's Log === */
+.site-footer {
+  background: var(--ocean-deep);
+  color: var(--sand-medium);
+  padding: var(--space-lg) 0 var(--space-md);
+  margin-top: var(--space-xl);
+  border-top: 4px solid var(--compass-gold);
+  position: relative;
+}
+
+.site-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 40px,
+      rgba(255, 255, 255, 0.02) 40px,
+      rgba(255, 255, 255, 0.02) 42px
+    );
+  pointer-events: none;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-md);
+  position: relative;
+  z-index: 1;
+}
+
+.footer-section h4 {
+  color: var(--compass-gold);
+  margin-bottom: var(--space-sm);
+  font-family: var(--font-display);
+  font-size: 1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  margin: 0;
+}
+
+.footer-section a {
+  color: var(--sand-medium);
+  border-bottom: 1px solid transparent;
+}
+
+.footer-section a:hover {
+  color: var(--sand-light);
+  border-bottom-color: var(--compass-gold);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--space-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+  font-family: var(--font-display);
+}
+
+/* === SPECIAL ELEMENTS === */
+
+/* Compass rose decoration */
+.compass-decoration {
+  width: 120px;
+  height: 120px;
+  margin: var(--space-md) auto;
+  position: relative;
+  animation: rotate 60s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Wave divider */
+.wave-divider {
+  height: 40px;
+  background-image: 
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 10px,
+      var(--ocean-light) 10px,
+      var(--ocean-light) 20px
+    );
+  opacity: 0.1;
+  margin: var(--space-md) 0;
+}
+
+/* Specification boxes - chart annotations */
+.spec-box {
+  background: rgba(74, 124, 153, 0.05);
+  border-left: 4px solid var(--ocean-light);
+  padding: var(--space-sm) var(--space-md);
+  margin: var(--space-sm) 0;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+}
+
+.spec-box strong {
+  color: var(--ocean-deep);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Build phase indicators */
+.phase-indicator {
+  display: inline-block;
+  background: var(--compass-gold);
+  color: var(--ocean-deep);
+  padding: 0.2em 0.6em;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-right: var(--space-xs);
+  border-radius: var(--border-radius);
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger animations for cards */
+.content-card:nth-child(1) { animation: fadeInUp 0.6s ease-out 0.1s backwards; }
+.content-card:nth-child(2) { animation: fadeInUp 0.6s ease-out 0.2s backwards; }
+.content-card:nth-child(3) { animation: fadeInUp 0.6s ease-out 0.3s backwards; }
+.content-card:nth-child(4) { animation: fadeInUp 0.6s ease-out 0.4s backwards; }
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  
+  .site-header .site-container {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+  
+  .site-nav {
+    flex-direction: column;
+    gap: var(--space-xs);
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === PRINT STYLES - Field Manual === */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  
+  .site-header,
+  .site-footer,
+  .site-nav,
+  .hero-cta {
+    display: none;
+  }
+  
+  .content-card {
+    page-break-inside: avoid;
+    border: 1px solid #ccc;
+    box-shadow: none;
+  }
+  
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+}

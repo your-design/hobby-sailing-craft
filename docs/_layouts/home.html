@@ -1,0 +1,105 @@
+---
+layout: default
+---
+
+<div class="hero">
+  <h1 class="hero-title">{{ site.title }}</h1>
+  <p class="hero-subtitle">{{ site.tagline }}</p>
+  <p style="max-width: 60ch; margin: 0 auto var(--space-md);">{{ site.description }}</p>
+  <a href="#content" class="hero-cta">Explore the Project</a>
+</div>
+
+<div id="content">
+  {{ content }}
+</div>
+
+<style>
+/* Additional home page styles */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
+  margin: var(--space-lg) 0;
+}
+
+.feature-card {
+  background: white;
+  border: var(--border-width) solid var(--sand-dark);
+  border-top: 4px solid var(--ocean-medium);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(74, 124, 153, 0.05), transparent);
+  transition: left 0.5s ease;
+}
+
+.feature-card:hover::before {
+  left: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-top-color: var(--coral-accent);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-sm);
+  color: var(--ocean-medium);
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  color: var(--ocean-deep);
+}
+
+.feature-card p {
+  color: var(--ink-medium);
+  font-size: 0.95rem;
+}
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-md);
+  margin: var(--space-lg) 0;
+  padding: var(--space-md);
+  background: rgba(26, 58, 82, 0.03);
+  border-top: 2px solid var(--ocean-medium);
+  border-bottom: 2px solid var(--ocean-medium);
+}
+
+.stat {
+  text-align: center;
+  padding: var(--space-sm);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--coral-accent);
+  font-family: var(--font-display);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ocean-deep);
+  font-family: var(--font-display);
+}
+</style>
