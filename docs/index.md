@@ -230,7 +230,7 @@ The proa isn't new - it's **the most refined sailing design in human history.**
 - **Cost calculator:** Estimate your build budget
 - **Tool list:** What you need (CNC optional)
 
-[Go to Downloads →](/downloads/)
+[Go to Downloads →](/assets/downloads/)
 
 ---
 
@@ -340,7 +340,7 @@ Next: Larger expedition proas for Great Lakes and coastal sailing. Trimaran vari
 
 ---
 
-[Download Files](/downloads/) | [Read History](/history/) | [View Designs](/designs/) | [Build Guides](/build/) | [Community Forum](/community/)
+[Download Files](/assets/downloads/) | [Read History](/history/) | [View Designs](/designs/) | [Build Guides](/build/) | [Community Forum](/community/)
 
 ---
 

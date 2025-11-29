@@ -1,9 +1,8 @@
 ---
 layout: guide
-title: "Materials Shootout"
+title: "Ultimate Materials Shootout"
 permalink: /designs/materials-shootout.html
 ---
-
 
 # Ultimate Materials Shootout: What's REALLY Best?
 ## Aluminum vs Fiberglass vs Carbon Fiber vs Plastic
