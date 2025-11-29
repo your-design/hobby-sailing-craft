@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: "Foam Core Construction: Deep Dive Analysis"
-permalink: /designs/foam-core-construction-deep-dive-analysis.html
+permalink: /designs/foam-core-analysis.html
 ---
 
 # Foam Core Construction: Deep Dive Analysis
