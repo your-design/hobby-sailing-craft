@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: page
 title: "Foam Core Construction: Deep Dive Analysis"
 permalink: /designs/foam-core-analysis.html
 ---

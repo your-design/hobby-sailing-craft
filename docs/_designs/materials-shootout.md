@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: page
 title: "Ultimate Materials Shootout"
 permalink: /designs/materials-shootout.html
 ---

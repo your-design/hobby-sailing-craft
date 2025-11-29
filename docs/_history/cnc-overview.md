@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: page
 title: "CNC Mill: Complete Documentation"
 subtitle: "Overview and Theory"
 date: 2025-11-28

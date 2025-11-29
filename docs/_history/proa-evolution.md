@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: page
 title: "The Proa: 3000 Years of Evolution"
 subtitle: "How Pacific Islanders Solved Sailing Challenges Millennia Before Modern Engineers"
 date: 2025-11-28

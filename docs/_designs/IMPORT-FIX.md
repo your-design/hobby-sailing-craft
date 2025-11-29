@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: page
 title: "Fusion 360 Step-by-Step Guide"
 step: 9
 time: "2 hours"

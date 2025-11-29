@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: home
 title: "Build Guides"
 subtitle: "Main Guide"
 date: 2025-11-28

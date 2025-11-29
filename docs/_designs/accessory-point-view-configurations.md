@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: page
 title: "Mounting Poings and Accessories"
 step: 9
 permalink: /designs/mounting-points-catalog.html

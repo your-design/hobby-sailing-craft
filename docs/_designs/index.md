@@ -1,5 +1,5 @@
 ---
-layout: design
+layout: home
 title: "Asymmetric Hull Design"
 subtitle: "Main Design"
 date: 2025-11-28

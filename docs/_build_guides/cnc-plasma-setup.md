@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: page
 title: "CNC Plasma Cutter Setup Guide"
 permalink: /designs/cnc-plasma-cutter-setup-guide.html
 ---

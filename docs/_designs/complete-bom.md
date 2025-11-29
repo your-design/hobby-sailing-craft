@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: page
 title: "Complete Bill of Materials - Aluminum Riveted Proa"
 permalink: /designs/complete-bill-of-materials.html
 ---

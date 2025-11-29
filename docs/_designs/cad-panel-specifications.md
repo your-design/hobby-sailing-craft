@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: page
 title: "CAD Panel Specifications"
 permalink: /designs/cad-panel-specifications.html
 ---

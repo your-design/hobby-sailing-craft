@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: page
 title: "Proa + Ana mounting point and accessories catalog"
 step: 9
 permalink: /designs/mounting-points-catalog.html

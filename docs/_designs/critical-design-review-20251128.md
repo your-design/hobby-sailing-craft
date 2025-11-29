@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: page
 title: "Critical Design Review"
 permalink: /designs/critical-design-review.html
 ---

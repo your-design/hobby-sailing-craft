@@ -1,5 +1,5 @@
 ---
-layout: design
+layout: page
 title: "Asymmetric Hull Design"
 subtitle: "Mathematical Definition"
 date: 2025-11-28

@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: page
 title: "Complete Aluminum Riveted Proa Build Guide"
 permalink: /designs/complete-aluminum-riveted-proa-build-guide.html
 ---

@@ -1,5 +1,5 @@
 ---
-layout: guide
+layout: page
 title: "Riveted Construction Manual"
 permalink: /designs/riveted-construction-manual.html
 ---
