@@ -254,7 +254,7 @@ Don't have a CNC mill? We've got you covered.
 - Jigsaw + sander = totally viable
 - Adds ~20 hours to build time
 
-[CNC Build Guide →](/cnc-mill/)
+[CNC Build Guide →](/build-guides/cnc-machine.html)
 
 ---
 
@@ -277,7 +277,7 @@ We release everything under **Creative Commons BY-SA 4.0** because:
 - **Translate docs** - make accessible worldwide
 - **Fund development** - sponsor prototyping, testing, documentation
 
-[Join Community Forum →](/community/)
+[Join Community Forum →](https://github.com/your-design/hobby-sailing-craft/issues)
 
 ---
 
@@ -304,7 +304,7 @@ We release everything under **Creative Commons BY-SA 4.0** because:
 - ⏳ Community feedback integration
 - ⏳ Production-ready plans release
 
-[View Roadmap →](/roadmap/)
+[View Roadmap →](https://github.com/your-design/hobby-sailing-craft)
 
 ---
 
@@ -340,7 +340,7 @@ Next: Larger expedition proas for Great Lakes and coastal sailing. Trimaran vari
 
 ---
 
-[Download Files](/assets/downloads/) | [Read History](/history/) | [View Designs](/designs/) | [Build Guides](/build/) | [Community Forum](/community/)
+[Download Files](/assets/downloads/) | [Read History](/history/) | [View Designs](/designs/) | [Build Guides](/build-guides/) | [Community Forum](https://github.com/your-design/hobby-sailing-craft/issues)
 
 ---
 
