@@ -15,7 +15,7 @@ permalink: /designs/index.html
 
 ## Hull Mathematics
 
-[detailed design document](/designs/hull-mathematics/index.html)
+[detailed design document](/designs/hull-mathematics.html)
 
 
 ## Hull CAD Generation
