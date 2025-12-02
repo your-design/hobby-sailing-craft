@@ -26,7 +26,7 @@ permalink: /designs/index.html
 
 ### Hull
 
-* [Foam Hull Dimensions](/designs/dimensions.html)
+* [Foam Hull Dimensions](/designs/foam-hull-dimensions.html)
 
 ![Hull PopArt](/assets/images/hull-pop-art.svg)
 
