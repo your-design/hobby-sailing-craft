@@ -13,18 +13,20 @@ permalink: /designs/index.html
 ![Complete Proa - PopArt](/assets/images/complete-proa-pop-art.svg)
 
 
+[CNC Mill Machine, see here](/designs/cnc-bom.html)
+
 ## Hull Mathematics
 
 [detailed design document](/designs/hull-mathematics.html)
 
 
-## Hull CAD Generation
+## Foam Hull Design
 
-* [Fusion 360 Import Guide](/designs/import-guide.html)
-* [Fusion 360 Design Instructions](/designs/fusion360-instructions.html)
 
 
 ### Hull
+
+* [Foam Hull Dimensions](/designs/dimensions.html)
 
 ![Hull PopArt](/assets/images/hull-pop-art.svg)
 
@@ -32,6 +34,12 @@ permalink: /designs/index.html
 ### Ana
 
 ![Ana](/assets/images/ama-pop-art.svg)
+
+
+### Outdated Design Documents
+
+> * [Fusion 360 Import Guide](/designs/import-guide.html)
+> * [Fusion 360 Design Instructions](/designs/fusion360-instructions.html)
 
 
 ## History
