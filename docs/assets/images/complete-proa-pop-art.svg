@@ -199,7 +199,7 @@
     <rect x="20" y="20" width="1260" height="40" fill="#0066CC" stroke="#000" stroke-width="3"/>
     <text x="650" y="48" font-family="Impact" font-size="28" 
           fill="#FFFF00" text-anchor="middle" font-weight="bold">
-      SPECIFICATIONS & FEATURES
+      SPECIFICATIONS and FEATURES
     </text>
     
     <!-- Three columns of specs -->
