@@ -61,14 +61,14 @@ defaults:
       path: ""
       type: "designs"
     values:
-      layout: "design"
+      layout: "page"
   - scope:
       path: ""
       type: "build_guides"
     values:
-      layout: "guide"
+      layout: "page"
   - scope:
       path: ""
       type: "history"
     values:
-      layout: "article"
+      layout: "page"

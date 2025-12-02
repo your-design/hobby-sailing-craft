@@ -36,6 +36,11 @@ permalink: /designs/index.html
 ![Ana](/assets/images/ama-pop-art.svg)
 
 
+## Sailing Rig
+
+[Sailing Rig Instructions](/designs/sailing-rig-installation.html)
+
+
 ### Outdated Design Documents
 
 > * [Fusion 360 Import Guide](/designs/import-guide.html)
